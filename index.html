@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <body>
+      <div id="app-wrapper">
+        <nav class="main-nav">
+          <a id="end-game" class="close"><svg class="icon icon-close"><use xlink:href="/img/sprite.svg#icon-close"></use></svg>
+          </a>
+          <a id="game-info" class="info"><svg class="icon icon-information-outline"><use xlink:href="/img/sprite.svg#icon-information-outline"></use></svg>        
+          </a>
+          <a id="new-game" class= "reload"><svg class="icon icon-refresh"><use xlink:href="/img/sprite.svg#icon-refresh"></use></svg>        
+          </a>
+          <div class="popup-container">
+            <p class="popup-text"></p>
+          </div>
+        </nav>
+        <div class="main-content">
+          <div id="game-name"class="game-name">
+            <h1><span class="rockH1">Rock </span><span class="paperH1">paper </span><span class="scissH1">scissors</span>
+              ... <span class="bombh1">BOMB!!!</span> </h1>
+          </div>
+          <h1 id="goodbye-message" class="goodbye-message">Thanks for playing, see you next time!</h1>
+      
+          <div id="game-container" class="game-container">
+            <div id="game-scores" class="game-scores">
+             <div id= "user-score" class="user-score">
+                <p id="user-name" class="user-name">User</p>
+                <p id="user-score-points" class="user-score-points">0</p>
+              </div>
+              <div id="bot-score"class="bot-score">
+                <p id="bot-name" class="bot-name">Bot</p>
+                <p id="bot-score-points" class="bot-score-points">0</p>
+              </div>
+            </div>
+            <div id="game-functionality" class="game-functionality">
+              <button id="rock" class="buttons__rock pick-btn">
+                <svg class="icon icon-rock-n-roll"><use xlink:href="img/sprite.svg#icon-rock-n-roll"></use></svg>        </button>
+              <button id="paper" class="buttons__paper pick-btn">
+                <svg class="icon icon-paper-plane"><use xlink:href="img/sprite.svg#icon-paper-plane"></use></svg>        </button>
+              <button id="scissors" class="buttons__scissors pick-btn">
+                  <svg class="icon icon-scissors"><use xlink:href="img/sprite.svg#icon-scissors"></use></svg>
+              </button>
+            </div>
+            <div class="results">
+              <p class="final-results"></p>
+              <button id="bomb" class="buttons__bomb pick-btn"><svg class="icon icon-bomb"><use xlink:href="/img/sprite.svg#icon-bomb"></use></svg></button>
+            </div>
+          </div>      
+        </div>
+      </div>
+    <script src="script.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+<!-- 
+  
+  improvements:
+
+  1) rename ids and classes (more consistent)
+  2) make all functions reusable
+  3) use arrow functions
+
+-->
